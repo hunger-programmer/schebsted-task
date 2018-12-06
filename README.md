@@ -9,7 +9,16 @@
 Application server is based on NodeJS with Express framework. All routes and frontend application are based on React.
 
 ### How to browse and manage Videos?
-Application has 2 states; First you can see predefined Videos; 
+Application has 2 states; First you can see predefined Videos; And next one - you can create new video by simple form;
+
+#### Create tutorial:
+* Go to */create* 
+* Fill form(application require valid YouTube video URL)
+* Submit Form
+
+#### Browse/Manage tutorial:
+* Select and Click Video
+* Proceed Video to next column if you want
 
 ## Quick start
 

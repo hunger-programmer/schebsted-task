@@ -1,6 +1,6 @@
 [![MORS](https://www.oliviacentre.com/wp-content/uploads/2016/12/schibsted-logo.png)](https://www.oliviacentre.com/wp-content/uploads/2016/12/schibsted-logo.png)
  
-#Schibsted Music APP
+# Schibsted Music APP
  
 
 ## Repository introduction
@@ -8,7 +8,7 @@
 **Schibsted Music App** is application which provides you posibility to listen and browse your favorite videos on YouTube.  
 Application server is based on NodeJS with Express framework. All routes and frontend application are based on React.
 
-###How to browse and manage Videos?
+### How to browse and manage Videos?
 Application has 2 states; First you can see predefined Videos; 
 
 ## Quick start

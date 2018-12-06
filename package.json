@@ -1,14 +1,13 @@
 {
-  "name": "proposal-processing-service",
+  "name": "schibsted-music-app",
   "version": "1.0.0",
-  "description": "EasyLeasy Proposal Processing Service",
+  "description": "Schibsted Music App",
   "main": "src/index.jsx",
   "author": "Paweł Wójcik <p@hunger-programmers.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production --config webpack.prod.js --silent",
-    "server": "nodemon server/server.js",
-    "webpack": "webpack --mode development --config webpack.dev.js --watch",
+    "server": "./node_modules/nodemon/bin/nodemon.js server/server.js",
+    "webpack": "./node_modules/webpack-cli/bin/cli.js --mode development --config webpack.dev.js --watch",
     "dev": "concurrently \"npm run webpack\" \"npm run server\""
   },
   "dependencies": {

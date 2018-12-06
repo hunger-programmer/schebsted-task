@@ -28,17 +28,22 @@ class Video extends React.Component {
     return (
       <div onClick={this.toggle} className="video mb-3 cursor-pointer">
         <h2 className="video__title">
-          {`Title: ${video.title}`}
+          {video.title}
         </h2>
 
         <Collapse isOpened={isOpen}>
-          <iframe
-            width="100%"
-            height="250"
-            src={`https://www.youtube.com/embed/${video.url}`}
-            frameBorder="0"
-            allowFullScreen
-          />
+          {isOpen
+          && (
+            <iframe
+              width="100%"
+              height="250"
+              src={`https://www.youtube.com/embed/${video.url}`}
+              frameBorder="0"
+              allowFullScreen
+              title={video.id}
+            />
+          )
+          }
 
           <span className="video__comment">
             {`Comment: ${video.comment}`}

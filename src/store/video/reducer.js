@@ -20,7 +20,14 @@ const reducer = (state = initialState, action) => {
       return { ...state, loading: true };
     }
     case actions.CREATE_VIDEO_ERROR: {
-      return { ...state, createForm: { ...state.createForm, formErrors: action.error }, loading: false };
+      return {
+        ...state,
+        createForm: {
+          ...state.createForm,
+          formErrors: action.error
+        },
+        loading: false
+      };
     }
     case actions.CREATE_VIDEO_SUCCESS: {
       return { ...state, loading: false };
@@ -57,7 +64,7 @@ const reducer = (state = initialState, action) => {
 
       newState.data.forEach(changeStatusCallback);
 
-      return { ...newState };
+      return { ...newState, loading: false };
     }
 
     default: {

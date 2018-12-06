@@ -3,10 +3,9 @@ import React from 'react';
 import errorSchema from '../../schemas/errorSchema';
 
 const CreateVideoForm = ({
-                           onSubmit, onChange, formErrors, loading,
-                         }) => {
+  onSubmit, onChange, formErrors,
+}) => {
   const extractErrors = name => (formErrors.find(error => error.param === name) || {}).msg;
-
   return (
     <form onSubmit={onSubmit}>
       <div className="form-group">
@@ -76,7 +75,6 @@ const CreateVideoForm = ({
 CreateVideoForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
-  loading: PropTypes.bool.isRequired,
   formErrors: PropTypes.arrayOf(PropTypes.shape(errorSchema)),
 };
 

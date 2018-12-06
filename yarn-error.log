@@ -1,0 +1,99 @@
+Arguments: 
+  /home/pawel/.nvm/versions/node/v10.7.0/bin/node /home/pawel/.yarn/bin/yarn.js install
+
+PATH: 
+  /home/pawel/.nvm/versions/node/v10.7.0/bin:/home/pawel/.yarn/bin:/home/pawel/.config/yarn/global/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+Yarn version: 
+  1.6.0-20180326.1307
+
+Node version: 
+  10.7.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/pawel/Workspace/pps-web/package.json: Unexpected token } in JSON at position 1254
+      at JSON.parse (<anonymous>)
+      at /home/pawel/.yarn/lib/cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (/home/pawel/.yarn/lib/cli.js:98:30)
+      at /home/pawel/.yarn/lib/cli.js:109:13
+
+npm manifest: 
+  {
+    "name": "proposal-processing-service",
+    "version": "1.0.0",
+    "description": "EasyLeasy Proposal Processing Service",
+    "main": "src/index.jsx",
+    "author": "Paweł Wójcik <p@hunger-programmers.com>",
+    "license": "MIT",
+    "scripts": {
+      "build": "webpack --mode production --config webpack.prod.js --silent",
+      "server": "nodemon server/server.js",
+      "webpack": "webpack --mode development --config webpack.dev.js --watch",
+      "dev": "concurrently \"npm run webpack\" \"npm run server\""
+    },
+    "dependencies": {
+      "autoprefixer": "^9.1.0",
+      "axios": "^0.18.0",
+      "bootstrap": "^4.1.3",
+      "dotenv": "^6.0.0",
+      "express": "^4.16.3",
+      "extract-loader": "^2.0.1",
+      "image-webpack-loader": "^4.3.1",
+      "mini-css-extract-plugin": "^0.4.2",
+      "moment": "^2.22.2",
+      "morgan": "^1.9.0",
+      "optimize-css-assets-webpack-plugin": "^5.0.1",
+      "postcss-loader": "^2.1.6",
+      "prop-types": "^15.6.2",
+      "react": "^16.4.1",
+      "react-dom": "^16.4.1",
+      "react-intl": "^2.4.0",
+      "react-notifications": "^1.4.3",
+      "react-redux": "^5.0.7",
+      "redux": "^4.0.0",
+      "redux-logger": "^3.0.6",
+      "redux-thunk": "^2.3.0",
+      "serve-static": "^1.13.2",
+      "twig": "^1.12.0",
+      "uglifyjs-webpack-plugin": "^1.3.0",
+    },
+    "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.5",
+      "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+      "babel-plugin-transform-object-assign": "^6.22.0",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-es2015": "^6.24.1",
+      "babel-preset-es2015-ie": "^6.7.0",
+      "babel-preset-react": "^6.24.1",
+      "concurrently": "^3.6.1",
+      "css-loader": "^1.0.0",
+      "eslint": "^5.2.0",
+      "eslint-config-airbnb": "^17.0.0",
+      "eslint-plugin-import": "^2.13.0",
+      "eslint-plugin-jsx-a11y": "^6.1.1",
+      "eslint-plugin-react": "^7.10.0",
+      "file-loader": "^1.1.11",
+      "node-sass": "^4.9.2",
+      "nodemon": "^1.18.3",
+      "redux-devtools": "^3.4.1",
+      "sass-loader": "^7.1.0",
+      "style-loader": "^0.21.0",
+      "url-loader": "^1.0.1",
+      "webpack": "^4.16.3",
+      "webpack-cli": "^3.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

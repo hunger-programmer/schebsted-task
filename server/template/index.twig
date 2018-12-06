@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schibsted music app</title>
+    {% if ENV == 'production' %}
+        <link rel="stylesheet" href="/main.css" />
+    {% endif %}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+<div id="root" class="layout"></div>
+<script src="/bundle.js"></script>
+</body>
+</html>
